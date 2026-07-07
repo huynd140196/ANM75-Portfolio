@@ -109,7 +109,20 @@ A running log of what's done and what's next. Start each Claude Code session by 
 
 ---
 
-## Day 12: Get feedback (not started)
+## Day 12: Get feedback ✅
+- [x] Share draft with others
+- [x] Collect feedback
+
+**Notes for next session:**
+- Shared the structural draft with Phòng PA05 colleagues. Feedback: make it feel "more sophisticated/creative," and keep the section names (Header/About/Projects/Contact) as-is.
+- Acted on the feedback with a full visual + layout redesign:
+  - **Design direction** (inspired by a reference site, no text/images/exact colors copied): dark charcoal theme (`#0b0e12`) with a sharp cyan accent (`#00e5ff`), monospace font for headings/nav/labels + sans-serif for body text, animated stat counters (Years of Operation / Systems Protected / Team Members — placeholder numbers), and project cards restyled as bold numbered cards (01/02/03) with outlined borders and an accent glow on hover. Added a small `script.js` for the counter count-up animation, respecting `prefers-reduced-motion`. Re-verified color contrast on the new palette (~9.5:1–12.6:1 across all combos) and confirmed no unused CSS crept in.
+  - **Layout fix**: content had been stuck in one narrow centered column (`body` capped at `max-width: 700px`) even on wide desktop screens. Redistributed it: `header`/`main` now get their own `max-width: 1100px` container (decoupled from `body`), the hero splits into a two-column grid (name/tagline left, stats right) on `≥768px`, Projects switched from a flex row to a responsive CSS grid (`repeat(auto-fit, minmax(240px, 1fr))`, naturally 2–3 per row), and About got a two-column split (text + a CSS-only decorative "radar" visual, since no real image assets exist yet). Paragraph widths are explicitly clamped (`60ch`/`40em`) so text stays readable even in the wider layout. Everything still collapses to a single mobile column via the same mobile-first breakpoint pattern from Day 5.
+  - Caught and fixed a bug during this work: `project-1.html`'s `<h1>` and back-link live directly in `<body>` (no `<header>` wrapper), so removing `body`'s width cap would have left them stretched full-width/misaligned against the now-centered 1100px `<main>` — added a `body > h1, body > p` rule to keep them aligned.
+- ⚠️ Content is still placeholder and blocking real launch-readiness: About/Projects text is lorem ipsum, and the Contact mailto address is still `your.email@example.com`. Waiting on final copy from the office. Also still open: Day 1's browser-check + bio-edit-via-prompt practice, and Day 7's skipped review pass.
+
+---
+
 ## Day 13: Iterate on feedback (not started)
 ## Day 14: Final polish + reflection (not started)
 

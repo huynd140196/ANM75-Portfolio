@@ -6,7 +6,9 @@
   --text-muted: #8a94a3;
   --accent: #00e5ff;
   --accent-rgb: 0, 229, 255;
-  --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-mono:
+    ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    monospace;
   --font-sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -73,15 +75,21 @@ body > p {
   margin-right: auto;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-mono);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: var(--accent);
 }
 
@@ -210,13 +218,14 @@ nav a:focus {
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid rgba(var(--accent-rgb), 0.3);
-  background:
-    radial-gradient(circle,
-      transparent 0 29%,
-      rgba(var(--accent-rgb), 0.15) 30% 31%,
-      transparent 32% 59%,
-      rgba(var(--accent-rgb), 0.15) 60% 61%,
-      transparent 62% 100%);
+  background: radial-gradient(
+    circle,
+    transparent 0 29%,
+    rgba(var(--accent-rgb), 0.15) 30% 31%,
+    transparent 32% 59%,
+    rgba(var(--accent-rgb), 0.15) 60% 61%,
+    transparent 62% 100%
+  );
 }
 
 .radar::after {
@@ -233,25 +242,29 @@ nav a:focus {
   }
 }
 
-.project-list {
+.team-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
 @media (min-width: 640px) {
-  .project-list {
+  .team-list {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
 
-.project-card {
+.team-card {
   background-color: var(--bg-elevated);
   border: 1px solid rgba(var(--accent-rgb), 0.2);
   border-radius: 6px;
   padding: 1.25rem 1.5rem;
   min-width: 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .card-number {
@@ -265,20 +278,22 @@ nav a:focus {
   margin-bottom: 0.5rem;
 }
 
-.project-card h3 {
+.team-card h3 {
   color: var(--accent);
   margin-bottom: 0.75rem;
 }
 
-.project-card-link:hover .project-card,
-.project-card-link:focus .project-card {
+.team-card-link:hover .team-card,
+.team-card-link:focus .team-card {
   transform: translateY(-4px);
-  box-shadow: 0 0 24px rgba(var(--accent-rgb), 0.25), 0 6px 16px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 24px rgba(var(--accent-rgb), 0.25),
+    0 6px 16px rgba(0, 0, 0, 0.5);
   background-color: var(--bg-hover);
   border-color: rgba(var(--accent-rgb), 0.5);
 }
 
-.project-card-link {
+.team-card-link {
   display: block;
   min-width: 0;
   color: inherit;
