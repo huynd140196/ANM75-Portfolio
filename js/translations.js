@@ -6,7 +6,6 @@ const translations = {
     navContact: "Contact",
     langEnLabel: "Switch to English",
     langViLabel: "Switch to Vietnamese",
-    statusLabel: "System Status: Secure",
     heroHeading:
       "DEPARTMENT OF CYBER SECURITY AND HIGH-TECH CRIME PREVENTION - HUE CITY POLICE",
     heroTagline:
@@ -44,6 +43,10 @@ const translations = {
     team3WhatWeLearnedText:
       "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
     backToHome: "Back to home",
+    securityThreatText: "THREAT DETECTED",
+    securityTerminalLine:
+      "Scanning network... Threat isolated... Access restored.",
+    securitySecureText: "SYSTEM SECURE",
     pageTitleIndex: "Phòng PA05 Portfolio",
     pageTitleTeam1: "team One — Phòng PA05 Portfolio",
     pageTitleTeam2: "team Two — Phòng PA05 Portfolio",
@@ -56,7 +59,6 @@ const translations = {
     navContact: "Liên hệ",
     langEnLabel: "Chuyển sang tiếng Anh",
     langViLabel: "Chuyển sang tiếng Việt",
-    statusLabel: "Trạng thái hệ thống: An toàn",
     heroHeading:
       "PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO - CÔNG AN THÀNH PHỐ HUẾ",
     heroTagline:
@@ -94,147 +96,13 @@ const translations = {
     team3WhatWeLearnedText:
       "Đây là đoạn văn bản mẫu mô tả kết quả và kinh nghiệm đạt được của Đội Ba.",
     backToHome: "Về trang chủ",
+    securityThreatText: "PHÁT HIỆN MỐI ĐE DỌA",
+    securityTerminalLine:
+      "Đang quét mạng... Mối đe dọa đã bị cô lập... Đã khôi phục quyền truy cập.",
+    securitySecureText: "HỆ THỐNG AN TOÀN",
     pageTitleIndex: "Phòng PA05 Portfolio",
     pageTitleTeam1: "Đội Một — Phòng PA05 Portfolio",
     pageTitleTeam2: "Đội Hai — Phòng PA05 Portfolio",
     pageTitleTeam3: "Đội Ba — Phòng PA05 Portfolio",
   },
 };
-
-const LANG_STORAGE_KEY = "pa05-lang";
-
-function applyLanguage(lang) {
-  const dict = translations[lang];
-  if (!dict) return;
-
-  document.documentElement.lang = lang;
-
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.dataset.i18n;
-    if (dict[key]) {
-      el.textContent = dict[key];
-    }
-  });
-
-  const titleKey = document.body.dataset.i18nTitle;
-  if (titleKey && dict[titleKey]) {
-    document.title = dict[titleKey];
-  }
-
-  const langButtons = document.querySelectorAll(".lang-btn");
-  langButtons.forEach((btn) => {
-    const isActive = btn.dataset.lang === lang;
-    btn.classList.toggle("is-active", isActive);
-    btn.setAttribute("aria-pressed", String(isActive));
-  });
-
-  localStorage.setItem(LANG_STORAGE_KEY, lang);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem(LANG_STORAGE_KEY);
-  applyLanguage(savedLang === "en" || savedLang === "vi" ? savedLang : "vi");
-
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
-  });
-
-  const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  ).matches;
-  const counters = document.querySelectorAll(".stat-number");
-  const duration = 1200;
-
-  function animateCounter(counter) {
-    const target = Number(counter.dataset.target);
-    const suffix = counter.dataset.suffix || "";
-
-    if (prefersReducedMotion) {
-      counter.textContent = target + suffix;
-      return;
-    }
-
-    const start = performance.now();
-
-    function tick(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      const value = Math.floor(progress * target);
-      counter.textContent = value + suffix;
-
-      if (progress < 1) {
-        requestAnimationFrame(tick);
-      } else {
-        counter.textContent = target + suffix;
-      }
-    }
-
-    requestAnimationFrame(tick);
-  }
-
-  if ("IntersectionObserver" in window && counters.length) {
-    const counterObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateCounter(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 },
-    );
-
-    counters.forEach((counter) => counterObserver.observe(counter));
-  } else {
-    counters.forEach(animateCounter);
-  }
-
-  const navLinks = document.querySelectorAll("nav a");
-  const sections = Array.from(navLinks)
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
-
-  if ("IntersectionObserver" in window && sections.length) {
-    const setActive = (target) => {
-      navLinks.forEach((link) => {
-        link.classList.toggle(
-          "active",
-          document.querySelector(link.getAttribute("href")) === target,
-        );
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target);
-          }
-        });
-      },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
-    );
-
-    sections.forEach((section) => observer.observe(section));
-  }
-
-  const revealSections = document.querySelectorAll("#about, #teams, #contact");
-
-  if ("IntersectionObserver" in window && revealSections.length) {
-    revealSections.forEach((section) => section.classList.add("reveal"));
-
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 },
-    );
-
-    revealSections.forEach((section) => revealObserver.observe(section));
-  }
-});

@@ -123,7 +123,20 @@ A running log of what's done and what's next. Start each Claude Code session by 
 
 ---
 
-## Day 13: Iterate on feedback (not started)
+## Day 13: Iterate on feedback ✅
+- [x] Iterate on the site based on prior direction/feedback
+
+**Notes for next session:**
+- Added a language toggle (EN/VI flags in the nav): all page text now lives in a `translations` data structure with `data-i18n` attributes driving the swap, and the active language persists via `localStorage`.
+- Added a dark/light mode toggle next to it. Light mode is a deliberately toned-down, professional utility look (not a full re-skin of the cyber theme), also persisted via `localStorage`.
+- Added a security alert sequence animation just above About (THREAT DETECTED → terminal typewriter → SYSTEM SECURE), refined over several rounds: terminal-window styling with blinking cursor, faster red flicker, warning/shield icons, crossfade between stages, scroll-triggered playback, then a follow-up pass making the two alert states full-width bold banners with tinted backgrounds and a scale-in pop — and finally wiring its text into the language toggle so it switches along with the rest of the page.
+- Fixed a background-gradient regression in light mode: an earlier attempt at extra depth (alternating per-section tint, then a `background-attachment: fixed` gradient) both produced visible banding across the page. Settled on one static, non-repeating gradient anchored to the top of the page, relying on card shadows and accent touches for depth instead.
+- Removed the "System Status: Secure" pulsing-dot indicator from the hero entirely (markup, CSS, and translation strings) — kept the `status-pulse` keyframe itself, since the security sequence's shield icon still uses it.
+- Proposed and got approval for a CSS/JS module split (`css/`: base, layout, components, animations, themes · `js/`: translations, theme-toggle, language-toggle, main, animations), then executed it: all four pages now load the 5 CSS files + 5 JS files in dependency order instead of one `styles.css`/`script.js`. This was a pure move, verified with automated cross-checks (no dangling references to the old files, every `@keyframes` matches its usages, no duplicate top-level JS declarations) — but ⚠️ still needs a manual test pass across all pages, both themes, both languages, and all animations before it's considered fully confirmed.
+- ⚠️ Still open: real content for About/Teams/Contact is still pending from the office (About/team blurbs are lorem ipsum, Contact is a fake email), and the "Phòng  PA05" double-space typo flagged earlier may still need checking. Also carried over from prior days: Day 1's browser-check + bio-edit-via-prompt practice, and Day 7's skipped review pass.
+
+---
+
 ## Day 14: Final polish + reflection (not started)
 
 ---

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Phòng PA05 Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/themes.css" />
   </head>
   <body data-i18n-title="pageTitleIndex">
     <div class="scanline" aria-hidden="true"></div>
@@ -20,34 +24,47 @@
           <a href="#contact" data-i18n="navContact">Liên hệ</a>
         </nav>
 
-        <div class="lang-toggle" role="group" aria-label="Language">
+        <div class="controls">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button
+              type="button"
+              class="lang-btn"
+              data-lang="en"
+              aria-label="Switch to English"
+              aria-pressed="false"
+            >
+              🇬🇧 EN
+            </button>
+            <button
+              type="button"
+              class="lang-btn"
+              data-lang="vi"
+              aria-label="Switch to Vietnamese"
+              aria-pressed="true"
+            >
+              🇻🇳 VI
+            </button>
+          </div>
+
           <button
             type="button"
-            class="lang-btn"
-            data-lang="en"
-            aria-label="Switch to English"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle light/dark theme"
             aria-pressed="false"
           >
-            🇬🇧 EN
-          </button>
-          <button
-            type="button"
-            class="lang-btn"
-            data-lang="vi"
-            aria-label="Switch to Vietnamese"
-            aria-pressed="true"
-          >
-            🇻🇳 VI
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"
+              >☀️</span
+            >
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"
+              >🌙</span
+            >
           </button>
         </div>
       </div>
 
       <div class="hero">
         <div class="hero-intro">
-          <div class="status-indicator">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span data-i18n="statusLabel">Trạng thái hệ thống: An toàn</span>
-          </div>
           <h1 id="top" data-i18n="heroHeading">
             PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO -
             CÔNG AN THÀNH PHỐ HUẾ
@@ -81,6 +98,41 @@
     </header>
 
     <main id="main-content">
+      <div class="security-sequence" aria-hidden="true">
+        <div
+          class="security-stage security-alert security-alert--danger"
+          data-stage="threat"
+        >
+          <span class="security-icon" aria-hidden="true">⚠️</span>
+          <span class="security-alert-text" data-i18n="securityThreatText"
+            >PHÁT HIỆN MỐI ĐE DỌA</span
+          >
+        </div>
+        <div class="security-stage security-terminal" data-stage="terminal">
+          <div class="terminal-window">
+            <div class="terminal-titlebar">
+              <span class="terminal-dot terminal-dot--red"></span>
+              <span class="terminal-dot terminal-dot--yellow"></span>
+              <span class="terminal-dot terminal-dot--green"></span>
+            </div>
+            <div class="terminal-body">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-text" data-i18n="securityTerminalLine"></span
+              ><span class="terminal-cursor">▌</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="security-stage security-alert security-alert--safe is-active"
+          data-stage="secure"
+        >
+          <span class="security-icon" aria-hidden="true">🛡️</span>
+          <span class="security-alert-text" data-i18n="securitySecureText"
+            >HỆ THỐNG AN TOÀN</span
+          >
+        </div>
+      </div>
+
       <section id="about">
         <h2 data-i18n="aboutHeading">Giới thiệu</h2>
         <div class="about-grid">
@@ -141,6 +193,10 @@
       </section>
     </main>
 
-    <script src="script.js" defer></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/theme-toggle.js" defer></script>
+    <script src="js/language-toggle.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
   </body>
 </html>

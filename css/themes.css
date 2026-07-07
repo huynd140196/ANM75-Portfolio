@@ -1,0 +1,74 @@
+:root[data-theme="light"] {
+  --bg: #f4f6f8;
+  --bg-elevated: #ffffff;
+  --bg-hover: #e8ecf0;
+  --text: #1b2430;
+  --text-muted: #5b6572;
+  --accent: #006c80;
+  --accent-rgb: 0, 108, 128;
+}
+
+[data-theme="light"] .scanline {
+  display: none;
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #e9eef4 0, #ffffff 640px);
+  background-repeat: no-repeat;
+}
+
+[data-theme="light"] .theme-icon-sun {
+  display: inline;
+}
+
+[data-theme="light"] .theme-icon-moon {
+  display: none;
+}
+
+[data-theme="light"] .stat-number {
+  display: inline-block;
+  background-color: rgba(var(--accent-rgb), 0.08);
+  padding: 0.15rem 0.6rem;
+  border-radius: 6px;
+}
+
+[data-theme="light"] .about-visual {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--accent-rgb), 0.12),
+    rgba(var(--accent-rgb), 0.02)
+  );
+  border-color: rgba(var(--accent-rgb), 0.3);
+  box-shadow: 0 4px 16px rgba(16, 24, 40, 0.08);
+}
+
+[data-theme="light"] .radar {
+  border-color: rgba(var(--accent-rgb), 0.45);
+  background: radial-gradient(
+    circle,
+    transparent 0 29%,
+    rgba(var(--accent-rgb), 0.28) 30% 31%,
+    transparent 32% 59%,
+    rgba(var(--accent-rgb), 0.28) 60% 61%,
+    transparent 62% 100%
+  );
+}
+
+[data-theme="light"] .radar::after {
+  background: conic-gradient(rgba(var(--accent-rgb), 0.55), transparent 25%);
+}
+
+[data-theme="light"] .team-card {
+  border-top: 3px solid var(--accent);
+  box-shadow:
+    0 1px 3px rgba(16, 24, 40, 0.06),
+    0 4px 14px rgba(16, 24, 40, 0.07);
+}
+
+[data-theme="light"] .team-card-link:hover .team-card,
+[data-theme="light"] .team-card-link:focus .team-card {
+  box-shadow:
+    0 10px 24px rgba(16, 24, 40, 0.12),
+    0 2px 8px rgba(var(--accent-rgb), 0.18);
+}
