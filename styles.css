@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: #112240;
+  color: #8fd9a6;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 6px 0;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #0a192f;
+  color: #d1d5db;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1, h2 {
+  color: #8fd9a6;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #8fd9a6;
+}
+
+header,
+section {
+  margin-bottom: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+}
+
+header p {
+  margin-bottom: 1.5rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-card {
+  background-color: #112240;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  min-width: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.project-card-link:hover .project-card,
+.project-card-link:focus .project-card {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  background-color: #16294d;
+}
+
+.project-card h3 {
+  color: #8fd9a6;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-link {
+  display: block;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-card-link {
+    flex: 1 1 0;
+  }
+}
