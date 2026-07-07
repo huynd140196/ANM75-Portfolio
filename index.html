@@ -6,30 +6,53 @@
     <title>Phòng PA05 Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-i18n-title="pageTitleIndex">
     <div class="scanline" aria-hidden="true"></div>
 
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header>
-      <nav aria-label="Primary">
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#teams">teams</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="nav-bar">
+        <nav aria-label="Primary">
+          <a href="#top" data-i18n="navHome">Trang chủ</a>
+          <a href="#about" data-i18n="navAbout">Giới thiệu</a>
+          <a href="#teams" data-i18n="navTeams">Đội ngũ</a>
+          <a href="#contact" data-i18n="navContact">Liên hệ</a>
+        </nav>
+
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button
+            type="button"
+            class="lang-btn"
+            data-lang="en"
+            aria-label="Switch to English"
+            aria-pressed="false"
+          >
+            🇬🇧 EN
+          </button>
+          <button
+            type="button"
+            class="lang-btn"
+            data-lang="vi"
+            aria-label="Switch to Vietnamese"
+            aria-pressed="true"
+          >
+            🇻🇳 VI
+          </button>
+        </div>
+      </div>
 
       <div class="hero">
         <div class="hero-intro">
           <div class="status-indicator">
             <span class="status-dot" aria-hidden="true"></span>
-            <span>System Status: Secure</span>
+            <span data-i18n="statusLabel">Trạng thái hệ thống: An toàn</span>
           </div>
-          <h1 id="top">
+          <h1 id="top" data-i18n="heroHeading">
             PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO -
             CÔNG AN THÀNH PHỐ HUẾ
           </h1>
-          <p>
+          <p data-i18n="heroTagline">
             Đây là trang portfolio giới thiệu công việc và dự án của Phòng PA05.
           </p>
         </div>
@@ -37,15 +60,21 @@
         <div class="stats" aria-label="Key statistics">
           <div class="stat">
             <span class="stat-number" data-target="8">0</span>
-            <span class="stat-label">Years of Operation</span>
+            <span class="stat-label" data-i18n="statYearsLabel"
+              >Năm hoạt động</span
+            >
           </div>
           <div class="stat">
             <span class="stat-number" data-target="250" data-suffix="+">0</span>
-            <span class="stat-label">Systems Protected</span>
+            <span class="stat-label" data-i18n="statSystemsLabel"
+              >Hệ thống được bảo vệ</span
+            >
           </div>
           <div class="stat">
             <span class="stat-number" data-target="32">0</span>
-            <span class="stat-label">Team Members</span>
+            <span class="stat-label" data-i18n="statTeamLabel"
+              >Thành viên</span
+            >
           </div>
         </div>
       </div>
@@ -53,15 +82,13 @@
 
     <main id="main-content">
       <section id="about">
-        <h2>About</h2>
+        <h2 data-i18n="aboutHeading">Giới thiệu</h2>
         <div class="about-grid">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
-            ad minim veniam quis nostrud exercitation. Ullamco laboris nisi ut
-            aliquip ex ea commodo consequat, duis aute irure dolor in
-            reprehenderit. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
+          <p data-i18n="aboutText">
+            Đây là đoạn văn bản mẫu giới thiệu về đơn vị, chức năng và nhiệm vụ
+            chính. Nội dung chính thức sẽ được cập nhật sau khi có thông tin từ
+            đơn vị. Văn bản này chỉ nhằm mục đích minh họa bố cục và độ dài của
+            đoạn văn trên trang.
           </p>
           <div class="about-visual" aria-hidden="true">
             <div class="radar"></div>
@@ -70,38 +97,35 @@
       </section>
 
       <section id="teams">
-        <h2>teams</h2>
+        <h2 data-i18n="teamsHeading">Đội ngũ</h2>
         <div class="team-list">
           <a class="team-card-link" href="team-1.html">
             <div class="team-card">
               <span class="card-number" aria-hidden="true">01</span>
-              <h3>team One</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip.
+              <h3 data-i18n="team1Title">Đội Một</h3>
+              <p data-i18n="team1CardBlurb">
+                Đây là đoạn mô tả mẫu cho Đội Một, sẽ được thay thế bằng nội
+                dung thực tế về dự án và thành tựu của đội sau này.
               </p>
             </div>
           </a>
           <a class="team-card-link" href="team-2.html">
             <div class="team-card">
               <span class="card-number" aria-hidden="true">02</span>
-              <h3>team Two</h3>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia.
+              <h3 data-i18n="team2Title">Đội Hai</h3>
+              <p data-i18n="team2CardBlurb">
+                Đây là đoạn mô tả mẫu cho Đội Hai, minh họa độ dài văn bản
+                tiếng Việt trong bố cục thẻ dự án.
               </p>
             </div>
           </a>
           <a class="team-card-link" href="team-3.html">
             <div class="team-card">
               <span class="card-number" aria-hidden="true">03</span>
-              <h3>team Three</h3>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto.
+              <h3 data-i18n="team3Title">Đội Ba</h3>
+              <p data-i18n="team3CardBlurb">
+                Đây là đoạn mô tả mẫu cho Đội Ba, dùng để kiểm tra cách văn bản
+                tiếng Việt hiển thị trong giao diện.
               </p>
             </div>
           </a>
@@ -109,9 +133,9 @@
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <h2 data-i18n="contactHeading">Liên hệ</h2>
         <p>
-          Get in touch:
+          <span data-i18n="contactLabel">Liên hệ với chúng tôi:</span>
           <a href="mailto:your.email@example.com">your.email@example.com</a>
         </p>
       </section>
