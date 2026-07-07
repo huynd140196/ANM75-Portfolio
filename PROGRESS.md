@@ -98,7 +98,17 @@ A running log of what's done and what's next. Start each Claude Code session by 
 
 ---
 
-## Day 11: Deploy to GitHub Pages (not started)
+## Day 11: Deploy to GitHub Pages ✅ 🎉 Milestone reached
+- [x] Site deployed live
+
+**Notes for next session:**
+- Live at https://huynd140196.github.io/ANM75-Portfolio/ — first public deployment milestone.
+- The header/intro merge question (flagged since Day 6) is now resolved: `<h1>` + bio + nav were merged into one `<header>` block before this deploy.
+- ⚠️ Important: the site went live **with known placeholder content still in place** — About and Projects text are still lorem ipsum, and the Contact section's mailto link is still the fake `your.email@example.com` address. These are now visible to real visitors and should be swapped for real content/email as the very next priority.
+- Also still open: Day 1's browser-check + bio-edit-via-prompt practice (never closed out), and Day 7's review pass (skipped, never circled back to).
+
+---
+
 ## Day 12: Get feedback (not started)
 ## Day 13: Iterate on feedback (not started)
 ## Day 14: Final polish + reflection (not started)
