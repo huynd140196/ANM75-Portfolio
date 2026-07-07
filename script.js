@@ -1,11 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const counters = document.querySelectorAll('.stat-number');
+document.addEventListener("DOMContentLoaded", () => {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  const counters = document.querySelectorAll(".stat-number");
   const duration = 1200;
 
   counters.forEach((counter) => {
     const target = Number(counter.dataset.target);
-    const suffix = counter.dataset.suffix || '';
+    const suffix = counter.dataset.suffix || "";
 
     if (prefersReducedMotion) {
       counter.textContent = target + suffix;
