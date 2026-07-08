@@ -47,12 +47,6 @@ nav {
   margin-top: 2rem;
 }
 
-.hero-intro h1 {
-  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
-  line-height: 1.7;
-  letter-spacing: normal;
-}
-
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

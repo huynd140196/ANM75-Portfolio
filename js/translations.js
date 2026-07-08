@@ -6,8 +6,8 @@ const translations = {
     navContact: "Contact",
     langEnLabel: "Switch to English",
     langViLabel: "Switch to Vietnamese",
-    heroHeading:
-      "DEPARTMENT OF CYBER SECURITY AND HIGH-TECH CRIME PREVENTION - HUE CITY POLICE",
+    heroNameLine1: "DEPARTMENT OF CYBER SECURITY AND HIGH-TECH CRIME PREVENTION",
+    heroNameLine2: "HUE CITY POLICE",
     heroTagline:
       "This is the portfolio page introducing the work and projects of Phòng PA05.",
     statYearsLabel: "Years of Operation",
@@ -16,6 +16,27 @@ const translations = {
     aboutHeading: "About",
     aboutText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    timelineHeading: "Timeline",
+    timeline1Date: "2020",
+    timeline1Title: "Security infrastructure upgrade",
+    timeline1Text:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    timeline2Date: "2021",
+    timeline2Title: "Monitoring team expansion",
+    timeline2Text:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    timeline3Date: "2022",
+    timeline3Title: "Intrusion detection system deployed",
+    timeline3Text:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    timeline4Date: "2023",
+    timeline4Title: "Incident response drill",
+    timeline4Text:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    timeline5Date: "2024",
+    timeline5Title: "Information security certification achieved",
+    timeline5Text:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     teamsHeading: "teams",
     team1Title: "team One",
     team1CardBlurb:
@@ -59,8 +80,9 @@ const translations = {
     navContact: "Liên hệ",
     langEnLabel: "Chuyển sang tiếng Anh",
     langViLabel: "Chuyển sang tiếng Việt",
-    heroHeading:
-      "PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO - CÔNG AN THÀNH PHỐ HUẾ",
+    heroNameLine1:
+      "PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO",
+    heroNameLine2: "CÔNG AN THÀNH PHỐ HUẾ",
     heroTagline:
       "Đây là trang portfolio giới thiệu công việc và dự án của Phòng PA05.",
     statYearsLabel: "Năm hoạt động",
@@ -69,6 +91,27 @@ const translations = {
     aboutHeading: "Giới thiệu",
     aboutText:
       "Đây là đoạn văn bản mẫu giới thiệu về đơn vị, chức năng và nhiệm vụ chính. Nội dung chính thức sẽ được cập nhật sau khi có thông tin từ đơn vị. Văn bản này chỉ nhằm mục đích minh họa bố cục và độ dài của đoạn văn trên trang.",
+    timelineHeading: "Dòng thời gian",
+    timeline1Date: "2020",
+    timeline1Title: "Nâng cấp hạ tầng bảo mật",
+    timeline1Text:
+      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+    timeline2Date: "2021",
+    timeline2Title: "Mở rộng đội ngũ giám sát",
+    timeline2Text:
+      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+    timeline3Date: "2022",
+    timeline3Title: "Triển khai hệ thống phát hiện xâm nhập",
+    timeline3Text:
+      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+    timeline4Date: "2023",
+    timeline4Title: "Diễn tập ứng phó sự cố",
+    timeline4Text:
+      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+    timeline5Date: "2024",
+    timeline5Title: "Đạt chứng nhận an toàn thông tin",
+    timeline5Text:
+      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
     teamsHeading: "Đội ngũ",
     team1Title: "Đội Một",
     team1CardBlurb:
