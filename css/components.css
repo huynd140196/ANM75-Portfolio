@@ -218,6 +218,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
+  background-color: var(--bg-elevated);
   transition: opacity 1s ease;
 }
 
@@ -225,6 +226,13 @@
   opacity: 1;
   z-index: 1;
   animation: kenburns 6s ease-out forwards;
+}
+
+.carousel-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel-corner {
@@ -288,26 +296,6 @@
   background-color: #ef4444;
   box-shadow: 0 0 4px rgba(239, 68, 68, 0.8);
   animation: status-pulse 2s ease-in-out infinite;
-}
-
-.carousel-slide--1 {
-  background: linear-gradient(135deg, #1e3a5f, #2c5f7c);
-}
-
-.carousel-slide--2 {
-  background: linear-gradient(135deg, #4a2c5f, #6b3f7a);
-}
-
-.carousel-slide--3 {
-  background: linear-gradient(135deg, #2c5f4a, #3f7a5f);
-}
-
-.carousel-slide--4 {
-  background: linear-gradient(135deg, #5f4a2c, #7a5f3f);
-}
-
-.carousel-slide--5 {
-  background: linear-gradient(135deg, #5f2c3a, #7a3f4f);
 }
 
 .carousel-arrow {
