@@ -137,18 +137,23 @@ A running log of what's done and what's next. Start each Claude Code session by 
 
 ---
 
-## Day 14: Timeline + hero banner redesign ✅ (in progress)
+## Day 14: Timeline + hero banner redesign ✅
 - [x] Built a vertical zigzag timeline section (5 milestones, shield markers, scroll-triggered reveal/conceal)
 - [x] Extensive hero banner redesign (see notes)
-- [ ] Review boot sequence in-browser and confirm it renders correctly
+- [x] Reviewed boot sequence in-browser — confirmed it renders and plays correctly
+- [x] Removed the placeholder stats row (Years/Systems/Team Members) entirely, including its count-up animation
+- [x] Turned the hero's left column into a looping 3-state display: office name/logo/tagline → live day-count since founding → live "years, months, days" elapsed, cycling continuously
+- [x] Replaced the 5 placeholder color blocks in the image carousel with real photos — confirmed working correctly on the live site
 
 **Notes for next session:**
 - Explored and abandoned a canvas dot-particle morph effect for the hero — sampled ~180 particles from source images, but that was too coarse to render detailed images (hammer-sickle, Hue emblem, logo) recognizably. Dropped it in favor of real image-based CSS effects.
-- Landed on the final hero concept: a monitor-framed "PC boot sequence." A bezel frame with a glowing power light wraps the whole banner. Phase 1: a loading bar 0%→100% with the hammer-sickle, Vietnam flag, and Hue citadel symbols appearing in sequence (citadel disappears at 100%). Phase 2: office logo appears with "Waiting...." text, holds 2 seconds. Phase 3 (resting layout): left third is the office name (above) + logo (centered) + "Hue City Police" (below), right two-thirds is the existing camera-feed-styled carousel (corner brackets, CAM label, Ken Burns, progress-ring dots — kept exactly as previously built). The boot sequence (phases 1–2) only plays on a visitor's very first-ever visit, tracked via `localStorage`; reloads skip straight to phase 3.
-- Along the way, iterated through and then fully removed several earlier hero concepts that didn't work out: a waving-flag effect, and two attempts at a CSS-drawn rainbow arc (first a blended conic-gradient, then filled concentric circles) before deciding to drop the rainbow concept entirely in favor of the boot-sequence design. All dead CSS/JS/keyframes from those attempts were cleaned up.
-- Added new `heroNameLine1`/`heroNameLine2` translation keys (EN/VI) for the office name text that now sits above/below the logo in the final layout, replacing the old single `heroHeading` key.
-- Just sent the boot-sequence build to Claude Code — implementation is complete and self-verified (grep sweeps for dead references, brace-balance checks, HTML well-formedness check), but **not yet reviewed live in a browser**.
-- ⚠️ Next session priorities: check the boot sequence actually renders/plays correctly, verify first-visit vs. reload behavior works as expected (may need to clear `localStorage` to re-test the first-visit path), and confirm the office name text above/below the logo switches correctly between EN/VI. Also still carried over from prior days: Day 1's browser-check + bio-edit-via-prompt practice, Day 7's skipped review pass, and real content for About/Teams/Contact still pending from the office.
+- Landed on the final hero concept: a monitor-framed "PC boot sequence." A bezel frame with a glowing power light wraps the whole banner. Phase 1: a loading bar 0%→100% with the hammer-sickle, Vietnam flag, and Hue citadel symbols appearing in sequence (citadel disappears at 100%). Phase 2: office logo appears with "Waiting...." text, holds 2 seconds. Phase 3 (resting layout): left third is the office name/logo/tagline block, right two-thirds is the existing camera-feed-styled carousel (corner brackets, CAM label, Ken Burns, progress-ring dots). The boot sequence (phases 1–2) only plays on a visitor's very first-ever visit, tracked via `localStorage`; reloads skip straight to phase 3. Confirmed live: it plays once, then correctly skips to the resting layout on reload.
+- Along the way, iterated through and then fully removed several earlier hero concepts that didn't work out: a waving-flag effect, and two attempts at a CSS-drawn rainbow arc, before dropping the rainbow concept entirely in favor of the boot-sequence design. All dead CSS/JS/keyframes from those attempts were cleaned up.
+- The hero's left column (previously a static logo + name lockup) now also cycles through the day-count/elapsed-time states — both calculated live from October 7, 2020 (founding date), not hardcoded. Briefly added, then reverted on request, a "0-digit-as-tiny-logo" treatment in those numbers; they now just display as normal numerals.
+- Replaced the 5 carousel placeholder gradients with real event photos (founding ceremony, incident-response drill, flood relief, campaign launch, etc.), cropped via `object-fit: cover` so nothing distorts. Kept the Ken Burns zoom, crossfade, corner brackets, CAM label, and dot navigation exactly as built.
+- ⚠️ Caught during this work: two image files were saved with uppercase `.JPG` extensions while every reference used lowercase `.jpg` — harmless on Windows but would 404 on GitHub Pages' case-sensitive server, so both were renamed to lowercase before shipping. Worth double-checking file extension case any time new image assets are dropped in.
+- 📝 Workflow tip worth keeping: after pushing image updates, browser caching can show a stale version even after a normal refresh — a hard refresh (Ctrl+Shift+R) or an incognito/private window is the fastest way to confirm a change is truly live.
+- Also still carried over from prior days: Day 1's browser-check + bio-edit-via-prompt practice, Day 7's skipped review pass, and real content for About/Teams/Contact still pending from the office.
 
 ---
 

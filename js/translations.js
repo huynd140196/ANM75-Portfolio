@@ -18,16 +18,18 @@ const translations = {
       "This is the portfolio page introducing the work and projects of Phòng PA05.",
     aboutHeading: "About",
     aboutText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "The Cyber Security and High-Tech Crime Prevention Department (PA05) of Hue City Police was established in 2020 under the direction of the Ministry of Public Security to meet the growing demands of safeguarding national cybersecurity in the digital era. The Division advises the leadership of Hue City Police on cybersecurity matters, protects national security in cyberspace, and prevents, detects, and investigates high-tech crimes and other cyber-related violations. In recent years, PA05 has successfully handled numerous cases involving the dissemination of fake news, harmful online content, and technology-enabled fraud schemes, thereby contributing to the maintenance of security, public order, and a safe cyberspace for individuals and organizations throughout Hue City.",
     timelineHeading: "Timeline",
-    timeline1Date: "2020",
-    timeline1Title: "Security infrastructure upgrade",
+    timeline1Date: "07/10/2020",
+    timeline1Title:
+      "The Foundation of The Cyber Security and High-Tech Crime Prevention Department (PA05) of Hue City Police",
     timeline1Text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    timeline2Date: "2021",
-    timeline2Title: "Monitoring team expansion",
+      "On the afternoon of October 7, Thua Thien Hue Provincial Police held an official ceremony to announce the decision of the Minister of Public Security on the establishment of the Cyber Security and High-Tech Crime Prevention Department (PA05), a specialized unit under the Provincial Police.",
+    timeline2Date: "2023",
+    timeline2Title:
+      "Major Commercial Surrogacy and Human Organ Trafficking Ring Dismantled",
     timeline2Text:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "On the morning of November 10, Thua Thien Hue Provincial Police announced the successful dismantling of a major criminal operation engaged in organizing illegal commercial surrogacy and trafficking in human tissues and organs.",
     timeline3Date: "2022",
     timeline3Title: "Intrusion detection system deployed",
     timeline3Text:
@@ -95,16 +97,18 @@ const translations = {
       "Đây là trang portfolio giới thiệu công việc và dự án của Phòng PA05.",
     aboutHeading: "Giới thiệu",
     aboutText:
-      "Đây là đoạn văn bản mẫu giới thiệu về đơn vị, chức năng và nhiệm vụ chính. Nội dung chính thức sẽ được cập nhật sau khi có thông tin từ đơn vị. Văn bản này chỉ nhằm mục đích minh họa bố cục và độ dài của đoạn văn trên trang.",
+      "Phòng An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao (PA05) Công an thành phố Huế được thành lập năm 2020 theo chủ trương của Bộ Công an nhằm đáp ứng yêu cầu bảo đảm an ninh mạng trong tình hình mới. Đơn vị có chức năng tham mưu, tổ chức bảo vệ an ninh trên không gian mạng; phòng ngừa, phát hiện, đấu tranh với tội phạm sử dụng công nghệ cao và các hành vi vi phạm pháp luật trên môi trường mạng. Thời gian qua, Phòng PA05 đã điều tra, xử lý nhiều vụ việc liên quan đến tin giả, thông tin xấu độc và các đường dây lừa đảo chiếm đoạt tài sản trên không gian mạng, góp phần giữ vững an ninh, trật tự trên địa bàn thành phố.",
     timelineHeading: "Dòng thời gian",
-    timeline1Date: "2020",
-    timeline1Title: "Nâng cấp hạ tầng bảo mật",
+    timeline1Date: "07/10/2020",
+    timeline1Title:
+      "Thành lập phòng An ninh mạng và PCTP sử dụng công nghệ cao Công an tỉnh Thừa Thiên Huế",
     timeline1Text:
-      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
-    timeline2Date: "2021",
-    timeline2Title: "Mở rộng đội ngũ giám sát",
+      "Chiều 7/10, Công an tỉnh Thừa Thiên Huế đã tổ chức lễ công bố quyết định của Bộ trưởng Bộ Công an về thành lập phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao (PCTPSDCNC) thuộc Công an tỉnh.",
+    timeline2Date: "2023",
+    timeline2Title:
+      "Phá chuyên án mang thai hộ, mua bán nội tạng cơ thể người quy mô lớn",
     timeline2Text:
-      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+      "Sáng 10/11, Công an tỉnh Thừa Thiên Huế cho biết vừa phá thành công chuyên án tổ chức mang thai hộ và mua bán mô, nội tạng cơ thể người.",
     timeline3Date: "2022",
     timeline3Title: "Triển khai hệ thống phát hiện xâm nhập",
     timeline3Text:
