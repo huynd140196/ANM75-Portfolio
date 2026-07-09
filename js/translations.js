@@ -6,13 +6,16 @@ const translations = {
     navContact: "Contact",
     langEnLabel: "Switch to English",
     langViLabel: "Switch to Vietnamese",
-    heroNameLine1: "DEPARTMENT OF CYBER SECURITY AND HIGH-TECH CRIME PREVENTION",
+    heroNameLine1:
+      "DEPARTMENT OF CYBER SECURITY AND HIGH-TECH CRIME PREVENTION",
     heroNameLine2: "HUE CITY POLICE",
+    heroDaysLabel: "Days Since Founding",
+    heroTimeLabel: "Time Since Founding",
+    heroYearsUnit: "years",
+    heroMonthsUnit: "months",
+    heroDaysUnit: "days",
     heroTagline:
       "This is the portfolio page introducing the work and projects of Phòng PA05.",
-    statYearsLabel: "Years of Operation",
-    statSystemsLabel: "Systems Protected",
-    statTeamLabel: "Team Members",
     aboutHeading: "About",
     aboutText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -67,7 +70,7 @@ const translations = {
     securityThreatText: "THREAT DETECTED",
     securityTerminalLine:
       "Scanning network... Threat isolated... Access restored.",
-    securitySecureText: "SYSTEM SECURE",
+    securitySecureText: "SYSTEM SECURED",
     pageTitleIndex: "Phòng PA05 Portfolio",
     pageTitleTeam1: "team One — Phòng PA05 Portfolio",
     pageTitleTeam2: "team Two — Phòng PA05 Portfolio",
@@ -83,11 +86,13 @@ const translations = {
     heroNameLine1:
       "PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO",
     heroNameLine2: "CÔNG AN THÀNH PHỐ HUẾ",
+    heroDaysLabel: "Số Ngày Từ Khi Thành Lập",
+    heroTimeLabel: "Thời Gian Từ Khi Thành Lập",
+    heroYearsUnit: "năm",
+    heroMonthsUnit: "tháng",
+    heroDaysUnit: "ngày",
     heroTagline:
       "Đây là trang portfolio giới thiệu công việc và dự án của Phòng PA05.",
-    statYearsLabel: "Năm hoạt động",
-    statSystemsLabel: "Hệ thống được bảo vệ",
-    statTeamLabel: "Thành viên",
     aboutHeading: "Giới thiệu",
     aboutText:
       "Đây là đoạn văn bản mẫu giới thiệu về đơn vị, chức năng và nhiệm vụ chính. Nội dung chính thức sẽ được cập nhật sau khi có thông tin từ đơn vị. Văn bản này chỉ nhằm mục đích minh họa bố cục và độ dài của đoạn văn trên trang.",

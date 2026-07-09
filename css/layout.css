@@ -41,22 +41,7 @@ nav {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
   margin-top: 2rem;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-@media (max-width: 480px) {
-  .stats {
-    grid-template-columns: 1fr;
-  }
 }
 
 .about-grid {

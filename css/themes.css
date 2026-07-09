@@ -26,13 +26,6 @@
   display: none;
 }
 
-[data-theme="light"] .stat-number {
-  display: inline-block;
-  background-color: rgba(var(--accent-rgb), 0.08);
-  padding: 0.15rem 0.6rem;
-  border-radius: 6px;
-}
-
 [data-theme="light"] .about-visual {
   background: linear-gradient(
     135deg,

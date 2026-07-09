@@ -137,7 +137,18 @@ A running log of what's done and what's next. Start each Claude Code session by 
 
 ---
 
-## Day 14: Final polish + reflection (not started)
+## Day 14: Timeline + hero banner redesign ✅ (in progress)
+- [x] Built a vertical zigzag timeline section (5 milestones, shield markers, scroll-triggered reveal/conceal)
+- [x] Extensive hero banner redesign (see notes)
+- [ ] Review boot sequence in-browser and confirm it renders correctly
+
+**Notes for next session:**
+- Explored and abandoned a canvas dot-particle morph effect for the hero — sampled ~180 particles from source images, but that was too coarse to render detailed images (hammer-sickle, Hue emblem, logo) recognizably. Dropped it in favor of real image-based CSS effects.
+- Landed on the final hero concept: a monitor-framed "PC boot sequence." A bezel frame with a glowing power light wraps the whole banner. Phase 1: a loading bar 0%→100% with the hammer-sickle, Vietnam flag, and Hue citadel symbols appearing in sequence (citadel disappears at 100%). Phase 2: office logo appears with "Waiting...." text, holds 2 seconds. Phase 3 (resting layout): left third is the office name (above) + logo (centered) + "Hue City Police" (below), right two-thirds is the existing camera-feed-styled carousel (corner brackets, CAM label, Ken Burns, progress-ring dots — kept exactly as previously built). The boot sequence (phases 1–2) only plays on a visitor's very first-ever visit, tracked via `localStorage`; reloads skip straight to phase 3.
+- Along the way, iterated through and then fully removed several earlier hero concepts that didn't work out: a waving-flag effect, and two attempts at a CSS-drawn rainbow arc (first a blended conic-gradient, then filled concentric circles) before deciding to drop the rainbow concept entirely in favor of the boot-sequence design. All dead CSS/JS/keyframes from those attempts were cleaned up.
+- Added new `heroNameLine1`/`heroNameLine2` translation keys (EN/VI) for the office name text that now sits above/below the logo in the final layout, replacing the old single `heroHeading` key.
+- Just sent the boot-sequence build to Claude Code — implementation is complete and self-verified (grep sweeps for dead references, brace-balance checks, HTML well-formedness check), but **not yet reviewed live in a browser**.
+- ⚠️ Next session priorities: check the boot sequence actually renders/plays correctly, verify first-visit vs. reload behavior works as expected (may need to clear `localStorage` to re-test the first-visit path), and confirm the office name text above/below the logo switches correctly between EN/VI. Also still carried over from prior days: Day 1's browser-check + bio-edit-via-prompt practice, Day 7's skipped review pass, and real content for About/Teams/Contact still pending from the office.
 
 ---
 

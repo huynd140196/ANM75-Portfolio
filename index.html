@@ -103,14 +103,54 @@
                       >PHÒNG AN NINH MẠNG VÀ PHÒNG CHỐNG TỘI PHẠM SỬ DỤNG CÔNG
                       NGHỆ CAO</span
                     >
-                    <img
-                      class="hero-lockup-logo"
-                      src="assets/images/logo.png"
-                      alt="Phòng PA05 logo"
-                    />
-                    <span class="hero-name-line" data-i18n="heroNameLine2"
-                      >CÔNG AN THÀNH PHỐ HUẾ</span
-                    >
+
+                    <span class="hero-center-stack">
+                      <span class="hero-center-item hero-center-item--logo is-active">
+                        <img
+                          class="hero-lockup-logo"
+                          src="assets/images/logo.png"
+                          alt="Phòng PA05 logo"
+                        />
+                      </span>
+                      <span
+                        class="hero-center-item hero-center-item--days"
+                        aria-hidden="true"
+                      >
+                        <span
+                          class="hero-stat-number hero-stat-number--days"
+                          data-hero-days-number
+                        ></span>
+                      </span>
+                      <span
+                        class="hero-center-item hero-center-item--duration"
+                        aria-hidden="true"
+                      >
+                        <span
+                          class="hero-stat-number hero-stat-number--duration"
+                          data-hero-duration-number
+                        ></span>
+                      </span>
+                    </span>
+
+                    <span class="hero-cycle-label-stack">
+                      <span
+                        class="hero-cycle-label is-active"
+                        data-i18n="heroNameLine2"
+                        >CÔNG AN THÀNH PHỐ HUẾ</span
+                      >
+                      <span
+                        class="hero-cycle-label"
+                        data-i18n="heroDaysLabel"
+                        aria-hidden="true"
+                        >Số Ngày Từ Khi Thành Lập</span
+                      >
+                      <span
+                        class="hero-cycle-label"
+                        data-i18n="heroTimeLabel"
+                        aria-hidden="true"
+                        >Thời Gian Từ Khi Thành Lập</span
+                      >
+                    </span>
                   </h1>
                 </div>
 
@@ -254,27 +294,6 @@
             </div>
 
             <span class="hero-monitor-power" aria-hidden="true"></span>
-          </div>
-        </div>
-
-        <div class="stats" aria-label="Key statistics">
-          <div class="stat">
-            <span class="stat-number" data-target="8">0</span>
-            <span class="stat-label" data-i18n="statYearsLabel"
-              >Năm hoạt động</span
-            >
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="250" data-suffix="+">0</span>
-            <span class="stat-label" data-i18n="statSystemsLabel"
-              >Hệ thống được bảo vệ</span
-            >
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="32">0</span>
-            <span class="stat-label" data-i18n="statTeamLabel"
-              >Thành viên</span
-            >
           </div>
         </div>
       </div>
@@ -480,6 +499,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/carousel.js" defer></script>
     <script src="js/hero-sequence.js" defer></script>
+    <script src="js/hero-cycle.js" defer></script>
     <script src="js/animations.js" defer></script>
   </body>
 </html>

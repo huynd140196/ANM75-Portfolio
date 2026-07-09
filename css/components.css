@@ -141,7 +141,8 @@
   margin: 0;
 }
 
-.hero-name-line {
+.hero-name-line,
+.hero-cycle-label {
   font-family: var(--font-mono);
   font-size: clamp(0.7rem, 1.6vw, 0.85rem);
   font-weight: 700;
@@ -154,6 +155,51 @@
   width: clamp(70px, 12vw, 110px);
   height: auto;
   display: block;
+}
+
+.hero-center-stack,
+.hero-cycle-label-stack {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-center-item,
+.hero-cycle-label {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.hero-center-item.is-active,
+.hero-cycle-label.is-active {
+  opacity: 1;
+}
+
+.hero-stat-number {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-stat-number--days {
+  font-size: clamp(1.75rem, 6vw, 2.75rem);
+  white-space: nowrap;
+}
+
+.hero-stat-number--duration {
+  font-size: clamp(1rem, 3vw, 1.35rem);
+  letter-spacing: 0.02em;
+}
+
+.hero-stat-zero-img {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  vertical-align: -0.12em;
 }
 
 .hero-carousel {
@@ -674,28 +720,6 @@ nav a.active::after {
 
 .theme-icon-sun {
   display: none;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.stat-number {
-  font-family: var(--font-mono);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-}
-
-.stat-label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
 }
 
 .about-visual {
