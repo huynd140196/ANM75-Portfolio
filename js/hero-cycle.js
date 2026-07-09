@@ -46,18 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function appendDigits(parent, numberStr) {
-    for (const ch of numberStr) {
-      if (ch === "0") {
-        const img = document.createElement("img");
-        img.className = "hero-stat-zero-img";
-        img.src = "assets/images/logo.png";
-        img.alt = "";
-        img.setAttribute("aria-hidden", "true");
-        parent.appendChild(img);
-      } else {
-        parent.appendChild(document.createTextNode(ch));
-      }
-    }
+    parent.appendChild(document.createTextNode(numberStr));
   }
 
   function renderDays() {
