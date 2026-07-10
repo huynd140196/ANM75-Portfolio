@@ -30,18 +30,21 @@ const translations = {
       "Major Commercial Surrogacy and Human Organ Trafficking Ring Dismantled",
     timeline2Text:
       "On the morning of November 10, Thua Thien Hue Provincial Police announced the successful dismantling of a major criminal operation engaged in organizing illegal commercial surrogacy and trafficking in human tissues and organs.",
-    timeline3Date: "2022",
-    timeline3Title: "Intrusion detection system deployed",
+    timeline3Date: "2024",
+    timeline3Title:
+      "Thua Thien Hue Police Dismantle Loan Shark Ring with More Than 2,000 Loan Contracts",
     timeline3Text:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    timeline4Date: "2023",
-    timeline4Title: "Incident response drill",
+      "Thua Thien Hue Provincial Police have dismantled a criminal ring engaged in illegal lending at exorbitant interest rates and arrested two suspects. The investigation revealed that the group had issued more than 2,000 loan contracts with a total lending amount exceeding VND 35 billion (approximately USD 1.5 million). Interest rates ranged from 109.5% to 419.75% per annum, generating more than VND 7 billion (approximately USD 300,000) in illicit profits.",
+    timeline4Date: "2025",
+    timeline4Title:
+      "Police Dismantle Multiple Illegal Gambling Rings Worth Hundreds of Billions of Vietnamese Dong",
     timeline4Text:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timeline5Date: "2024",
-    timeline5Title: "Information security certification achieved",
+      "In recent years, Thua Thien Hue Provincial Police (renamed Hue City Police on January 1, 2025) have successfully dismantled several large-scale illegal gambling rings involving total betting transactions worth hundreds of billions of Vietnamese dong. Law enforcement authorities have noted that gambling-related crimes tend to become more active in the period leading up to the Lunar New Year (Tet). Illegal gambling remains a major source of criminal activity, contributing to the emergence of various other offenses, generating significant public concern, and adversely affecting security and public order.",
+    timeline5Date: "6/2026",
+    timeline5Title:
+      "Criminal Ring Steals Funds Using More Than 22,000 International Payment Card Records",
     timeline5Text:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "A criminal group led by Duong Quang Phat purchased a large volume of stolen international payment card information to finance online advertising campaigns for products marketed through social media platforms. By exploiting the compromised card data, the suspects fraudulently obtained billions of Vietnamese dong, causing substantial financial losses to cardholders and financial institutions.",
     teamsHeading: "teams",
     team1Title: "team One",
     team1CardBlurb:
@@ -109,18 +112,20 @@ const translations = {
       "Phá chuyên án mang thai hộ, mua bán nội tạng cơ thể người quy mô lớn",
     timeline2Text:
       "Sáng 10/11, Công an tỉnh Thừa Thiên Huế cho biết vừa phá thành công chuyên án tổ chức mang thai hộ và mua bán mô, nội tạng cơ thể người.",
-    timeline3Date: "2022",
-    timeline3Title: "Triển khai hệ thống phát hiện xâm nhập",
+    timeline3Date: "2024",
+    timeline3Title:
+      "Thừa Thiên Huế phá chuyên án cho vay lãi nặng với hơn 2.000 hợp đồng vay",
     timeline3Text:
-      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
-    timeline4Date: "2023",
-    timeline4Title: "Diễn tập ứng phó sự cố",
+      "Công an tỉnh Thừa Thiên Huế vừa phá chuyên án, bắt 2 đối tượng có hành vi cho vay lãi nặng với hơn 2.000 hợp đồng vay, số tiền lên đến 35 tỷ đồng, lãi suất 109,5% đến 419,75%/năm, thu lợi bất chính trên 7 tỷ đồng.",
+    timeline4Date: "2025",
+    timeline4Title: "Triệt xóa nhiều đường dây đánh bạc hàng trăm tỷ đồng",
     timeline4Text:
-      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
-    timeline5Date: "2024",
-    timeline5Title: "Đạt chứng nhận an toàn thông tin",
+      "Thời gian qua, nhiều đường dây đánh bạc quy mô lớn với tang số lên đến hàng trăm tỷ đồng đã được lực lượng Công an tỉnh Thừa Thiên Huế (ngày 1/1/2025 là TP Huế) triệt phá. Theo quy luật, dịp giáp Tết Nguyên đán, tội phạm đánh bạc có dấu hiệu diễn biến phức tạp. Tội phạm, tệ nạn đánh bạc là một trong những nguyên nhân, điều kiện làm phát sinh nhiều loại tội phạm, gây bức xúc dư luận xã hội và ảnh hưởng xấu đến tình hình ANTT…",
+    timeline5Date: "6/2026",
+    timeline5Title:
+      "“Rút ruột” hơn 22.000 thẻ thanh toán quốc tế để chiếm đoạt tiền tỷ",
     timeline5Text:
-      "Đây là đoạn mô tả mẫu cho sự kiện này, sẽ được thay thế bằng nội dung thực tế sau này.",
+      "Nhóm đối tượng do Dương Quang Phát cầm đầu mua số lượng lớn thông tin thẻ thanh toán quốc tế để phục vụ chạy quảng cáo cho các trang bán hàng qua mạng xã hội, qua đó chiếm đoạt nhiều tỷ đồng.",
     teamsHeading: "Đội ngũ",
     team1Title: "Đội Một",
     team1CardBlurb:
