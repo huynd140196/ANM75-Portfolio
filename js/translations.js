@@ -47,14 +47,13 @@ const translations = {
       "A criminal group led by Duong Quang Phat purchased a large volume of stolen international payment card information to finance online advertising campaigns for products marketed through social media platforms. By exploiting the compromised card data, the suspects fraudulently obtained billions of Vietnamese dong, causing substantial financial losses to cardholders and financial institutions.",
     teamsHeading: "teams",
     team1Title: "team One",
-    team1CardBlurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    team1CardBlurb: "Cybercrime Infringing on National Security Prevention Team",
     team2Title: "team Two",
     team2CardBlurb:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
+      "Cyber-Related Crime Violating Social Order and Safety Prevention Team",
     team3Title: "team Three",
     team3CardBlurb:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto.",
+      "Research, Solution Development and Digital Data & Electronic Evidence Recovery Team",
     contactHeading: "Contact",
     contactLabel: "Get in touch:",
     whatItDoesHeading: "What it does",
@@ -129,13 +128,13 @@ const translations = {
     teamsHeading: "Đội ngũ",
     team1Title: "Đội Một",
     team1CardBlurb:
-      "Đây là đoạn mô tả mẫu cho Đội Một, sẽ được thay thế bằng nội dung thực tế về dự án và thành tựu của đội sau này.",
+      "Đội Phòng chống tội phạm sử dụng Không gian mạng xâm phạm an ninh quốc gia",
     team2Title: "Đội Hai",
     team2CardBlurb:
-      "Đây là đoạn mô tả mẫu cho Đội Hai, minh họa độ dài văn bản tiếng Việt trong bố cục thẻ dự án.",
+      "Đội Phòng chống tội phạm sử dụng Không gian vi phạm trật tự, an toàn xã hội",
     team3Title: "Đội Ba",
     team3CardBlurb:
-      "Đây là đoạn mô tả mẫu cho Đội Ba, dùng để kiểm tra cách văn bản tiếng Việt hiển thị trong giao diện.",
+      "Đội Nghiên cứu, phát triển giải pháp và Phục hồi dữ liệu, chứng cứ điện tử",
     contactHeading: "Liên hệ",
     contactLabel: "Liên hệ với chúng tôi:",
     whatItDoesHeading: "Nhiệm vụ chính",
