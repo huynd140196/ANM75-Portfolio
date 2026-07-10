@@ -48,6 +48,7 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   line-height: 1.6;
+  margin: 0;
   padding: 2rem 1.5rem;
   overflow-wrap: break-word;
   transition:

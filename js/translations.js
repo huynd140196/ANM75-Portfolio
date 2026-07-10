@@ -56,6 +56,13 @@ const translations = {
       "Research, Solution Development and Digital Data & Electronic Evidence Recovery Team",
     contactHeading: "Contact",
     contactLabel: "Get in touch:",
+    footerDeptName:
+      "Department of Cybersecurity and High-Tech Crime Prevention",
+    footerAddress: "Hue City Police, Vo Chi Cong Street, Vy Da Ward, Hue City",
+    footerHotlineLabel: "Hotline:",
+    footerDutyPhoneLabel: "Duty Officer Phone:",
+    footerCopyright:
+      "© 2026 Department of Cybersecurity and High-Tech Crime Prevention (PA05) - Hue City Police",
     whatItDoesHeading: "What it does",
     whatWeLearnedHeading: "What we learned",
     team1WhatItDoesText:
@@ -137,6 +144,14 @@ const translations = {
       "Đội Nghiên cứu, phát triển giải pháp và Phục hồi dữ liệu, chứng cứ điện tử",
     contactHeading: "Liên hệ",
     contactLabel: "Liên hệ với chúng tôi:",
+    footerDeptName:
+      "Phòng An ninh mạng và Phòng chống tội phạm sử dụng công nghệ cao",
+    footerAddress:
+      "Công an thành phố Huế, đường Võ Chí Công, phường Vỹ Dạ, thành phố Huế",
+    footerHotlineLabel: "Số đường dây nóng:",
+    footerDutyPhoneLabel: "Số điện thoại trực ban:",
+    footerCopyright:
+      "© 2026 Phòng An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao (PA05) - Công an thành phố Huế",
     whatItDoesHeading: "Nhiệm vụ chính",
     whatWeLearnedHeading: "Kết quả đạt được",
     team1WhatItDoesText:
