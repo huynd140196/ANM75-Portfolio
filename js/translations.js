@@ -47,7 +47,8 @@ const translations = {
       "A criminal group led by Duong Quang Phat purchased a large volume of stolen international payment card information to finance online advertising campaigns for products marketed through social media platforms. By exploiting the compromised card data, the suspects fraudulently obtained billions of Vietnamese dong, causing substantial financial losses to cardholders and financial institutions.",
     teamsHeading: "teams",
     team1Title: "team One",
-    team1CardBlurb: "Cybercrime Infringing on National Security Prevention Team",
+    team1CardBlurb:
+      "Cybercrime Infringing on National Security Prevention Team",
     team2Title: "team Two",
     team2CardBlurb:
       "Cyber-Related Crime Violating Social Order and Safety Prevention Team",
@@ -138,7 +139,7 @@ const translations = {
       "Đội Phòng chống tội phạm sử dụng Không gian mạng xâm phạm an ninh quốc gia",
     team2Title: "Đội Hai",
     team2CardBlurb:
-      "Đội Phòng chống tội phạm sử dụng Không gian vi phạm trật tự, an toàn xã hội",
+      "Đội Phòng chống tội phạm sử dụng Không gian mạng xâm phạm trật tự, an toàn xã hội",
     team3Title: "Đội Ba",
     team3CardBlurb:
       "Đội Nghiên cứu, phát triển giải pháp và Phục hồi dữ liệu, chứng cứ điện tử",
